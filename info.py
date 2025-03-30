@@ -13,16 +13,16 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '24711114'))
-API_HASH = environ.get('API_HASH', '5b6984923c5be893ccf7c52d378940da')
+API_ID = int(environ.get('API_ID', '21642989'))
+API_HASH = environ.get('API_HASH', '675248dfcc55763f9565a187b456c4b4')
 BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7917687220').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6496443693').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/SRM_owner_Bot") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002408966165'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002533322163'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/srm_request_movie')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002365356672').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002351026616').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://botipopcorn:botipopcorn@cluster0.s3o61.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -33,12 +33,12 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 #----------- There will be channel id add in all these ---------
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '0'))  
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','0'))
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0'))
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002372506486'))
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '0'))
-auth_channel = environ.get('AUTH_CHANNEL', '-1002436581358')
+auth_channel = environ.get('AUTH_CHANNEL', '-1002625147245 -1002391677566')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
-request_channel = environ.get('REQUEST_CHANNEL', '0')
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1002567702825')
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002525927148'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/srm_request_movie') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -68,7 +68,7 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-START_IMG = (environ.get('START_IMG', 'https://graph.org/file/f85c519efa008fbe19b09-e972956f70101e239b.jpg')).split()
+START_IMG = (environ.get('START_IMG', 'https://graph.org/file/dd3dfae88a64f2c513fd7-e83eb4c94e0e14544b.jpg')).split()
 FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
 PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/E7m.jpg')).split()
